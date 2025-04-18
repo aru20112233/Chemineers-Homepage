@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <script>
+        function redirectBackIfWide() {
+          if (window.innerWidth > 900) {
+            // Replace with your main page
+            window.location.href = "index.html";
+          }
+        }
+      
+        window.addEventListener("DOMContentLoaded", redirectBackIfWide);
+        window.addEventListener("resize", redirectBackIfWide);
+      </script>
+      
+
+            <!-- Message shown on smaller screens -->
+<div class="mobile-warning">
+    This website is only available on laptop screens (width > 900px).
+  </div>
+</body>
+</html>
